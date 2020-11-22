@@ -1,0 +1,34 @@
+body{
+display: flex;
+flex-direction: column;    
+width: auto;
+align-items: center;
+height: 100%;   
+background-color: #484848;
+font-size: large;
+font-weight: bolder;
+}
+
+body input{  
+width: 200px;
+height: 30px;
+border-radius: 7%;
+box-shadow: 1px 1px 1px 1px black;
+}
+
+.my-submit{
+    border-radius: 7%;
+    box-shadow: 1px 1px 1px 1px black;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+body h4{
+font-weight: bolder;
+color: #FF5A5F;
+}
+
+#heavy-title{
+ cursor: pointer; 
+}
