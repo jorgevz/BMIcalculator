@@ -33,14 +33,20 @@ box-shadow: 1px 1px 1px 1px black;
 #first-title{
 font-size: xx-large;    
 font-weight: bolder;
-color: #55B4B0;
+color: #FF5A5F;
 }
 
 #first-paragraph{
-font-size: large;
-color: black;
+color: whitesmoke;
+font-weight: bolder;
+}
+
+#second-body{
+background-color: gray;
+width: auto;
 }
 
 #heavy-title{
+    
  cursor: pointer; 
 }
