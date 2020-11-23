@@ -14,19 +14,26 @@ background-size: cover;
 background-attachment: fixed;
 }
 
-.inputs{  
+#height{  
 width: 200px;
 height: 30px;
 border-radius: 7%;
 box-shadow: 1px 1px 1px 1px black;
 }
 
+#weight{
+width: 200px;
+height: 30px;
+border-radius: 7%;
+box-shadow: 1px 1px 1px 1px black;  
+}
+
 .my-submit{
-    border-radius: 7%;
-    box-shadow: 1px 1px 1px 1px black;
-    cursor: pointer;
-    align-items: center;
-    margin-left: 65px;
+border-radius: 7%;
+box-shadow: 1px 1px 1px 1px black;
+cursor: pointer;
+align-items: center;
+margin-left: 65px;
 }
 
 
