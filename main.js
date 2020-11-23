@@ -6,7 +6,9 @@ function bmiOperation() {
 
     let constant = 703;
 
-    let result = constant * weight/height;
+    let realw = Math.pow(height,2);
+
+    let result = constant * weight/realw;
 
     console.log(result)
 
