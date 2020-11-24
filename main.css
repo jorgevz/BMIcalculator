@@ -7,11 +7,6 @@ height: auto;
 background-color: #484848;
 font-size: large;
 font-weight: bolder;
-background-image: url(https://media.giphy.com/media/5k1VkABjw5wQq0PNEU/giphy.gif);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
 }
 
 #height{  
@@ -59,5 +54,5 @@ width: auto;
 
 #result{
 font-weight: bolder;
-color:#FF5A5F ;
+color:#FF5A5F;
 }

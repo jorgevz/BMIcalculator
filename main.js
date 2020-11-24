@@ -14,13 +14,15 @@ function bmiOperation() {
     //rounded with *10/10 to show first decimal of the final result.
    let finalResult = Math.round(result * 10)/10
 
-    console.log(finalResult);
-
     document.getElementById('result').innerHTML = finalResult
 
- 
+let firstrange = "You need to eat more !"
+
+const first = finalResult
+
+if ( first < 18.5) {
+    document.getElementById('advice').innerHTML = firstrange
+}
+
 };
-
-
-
 
