@@ -33,7 +33,6 @@ border-radius: 7%;
 box-shadow: 1px 1px 1px 1px black;
 cursor: pointer;
 align-items: center;
-margin-left: 65px;
 }
 
 
@@ -56,4 +55,9 @@ width: auto;
 #heavy-title{
     
  cursor: pointer; 
+}
+
+#result{
+font-weight: bolder;
+color:#FF5A5F ;
 }

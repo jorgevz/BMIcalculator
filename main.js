@@ -16,9 +16,10 @@ function bmiOperation() {
 
     console.log(finalResult);
 
-    result = document.getElementById('result').innerText;
-};
+    document.getElementById('result').innerHTML = finalResult
 
+ 
+};
 
 
 
