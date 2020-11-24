@@ -7,12 +7,19 @@ function bmiOperation() {
 
     let constant = 703;
 
-
     let realWeight = Math.pow(height, 2);
 
     let result = constant * weight/realWeight;
 
-    console.log(result)
+    //rounded with *10/10 to show first decimal of the final result.
+   let finalResult = Math.round(result * 10)/10
 
-}
+    console.log(finalResult);
+
+    result = document.getElementById('result').innerText;
+};
+
+
+
+
 
