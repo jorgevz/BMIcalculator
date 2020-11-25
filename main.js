@@ -16,13 +16,17 @@ function bmiOperation() {
 
     document.getElementById('result').innerHTML = finalResult
 
-let firstrange = "You need to eat more !"
 
-const first = finalResult
+const bmi = finalResult
 
-if ( first < 18.5) {
-    document.getElementById('advice').innerHTML = firstrange
-}
+if ( bmi < 18.5) {
+    document.getElementById('advice').innerHTML = ranges[0]
+} 
 
 };
+
+//BMI advice statements
+
+const ranges = ["You need to eat more !", 
+"You are healthy !",  ]
 
