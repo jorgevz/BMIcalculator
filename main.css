@@ -9,15 +9,33 @@ font-size: large;
 font-weight: bolder;
 }
 
-#height{  
-width: 200px;
+.apos{
+font-size: 25px;
+font-weight: bolder;
+color: white;
+}
+
+#heights{
+display: flex;
+flex-direction: row;
+}
+
+#feet{  
+width: 40px;
 height: 30px;
 border-radius: 7%;
 box-shadow: 1px 1px 1px 1px black;
 }
 
+#inches{  
+    width: 40px;
+    height: 30px;
+    border-radius: 7%;
+    box-shadow: 1px 1px 1px 1px black;
+ }
+
 #weight{
-width: 200px;
+width: 100px;
 height: 30px;
 border-radius: 7%;
 box-shadow: 1px 1px 1px 1px black;  
