@@ -3,13 +3,11 @@ function bmiOperation() {
 
 
     //height (feet) input variable
-    let feet = document.getElementById('feet').value;
-
-    let feetConversion = feet * 12/10;
+    let feet = document.getElementById('feet').value* 12/10;
 
     let inches = document.getElementById('inches').value;
 
-    let finalHeight = feetConversion + inches
+    let finalHeight = feet + inches
 
     // weight input variable
     let weight = document.getElementById('weight').value;
