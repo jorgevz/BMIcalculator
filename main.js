@@ -21,12 +21,18 @@ const bmi = finalResult
 
 if ( bmi < 18.5) {
     document.getElementById('advice').innerHTML = ranges[0]
-} 
+} else if ( bmi < 24.9) {
+    document.getElementById('advice').innerHTML = ranges[1]
+} else if ( bmi < 29.9) {
+    document.getElementById('advice').innerHTML = ranges[2]
+} else if ( bmi >= 30) {
+    document.getElementById('advice').innerHTML = ranges[3]
+}
 
 };
 
 //BMI advice statements
 
 const ranges = ["You need to eat more !", 
-"You are healthy !",  ]
+"You are healthy !", "You are overweight", "You are obese"  ]
 
