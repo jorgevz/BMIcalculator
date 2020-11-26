@@ -1,18 +1,29 @@
 // In this function I am performing the whole calculation
 function bmiOperation() {
-    //height input variable
-    let height = document.getElementById('height').value;
-    //weight input variable
+
+
+    //height (feet) input variable
+    let feet = document.getElementById('feet').value;
+
+    let feetConversion = feet * 12/10;
+
+    let inches = document.getElementById('inches').value;
+
+    let finalHeight = feetConversion + inches
+
+    // weight input variable
     let weight = document.getElementById('weight').value;
 
     let constant = 703;
 
-    let realWeight = Math.pow(height, 2);
+    let realHeight = Math.pow(finalHeight, 2);
 
-    let result = constant * weight/realWeight;
+    let result = constant * weight/realHeight;
 
-    //rounded with *10/10 to show first decimal of the final result.
+    // rounded with *10/10 to show first decimal of the final result.
    let finalResult = Math.round(result * 10)/10
+
+   console.log(finalResult)
 
     document.getElementById('result').innerHTML = finalResult
 
@@ -34,5 +45,4 @@ if ( bmi < 18.5) {
 //BMI advice statements
 
 const ranges = ["You need to eat more !", 
-"You are healthy !", "You are overweight", "You are obese"  ]
-
+"You are healthy !", "You are overweight", "You are obese"  ];
