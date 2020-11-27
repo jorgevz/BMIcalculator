@@ -42,5 +42,7 @@ if ( bmi < 18.5) {
 
 //BMI advice statements
 
-const ranges = ["You need to eat more !", 
-"You are healthy !", "You are overweight", "You are obese"  ];
+const ranges = ["You are underweight. Reach out to a health proffesional to discuss more about your nutrition habits.", 
+"You are healthy, your BMI stands in a good position. Keep your good diet and exercise habits up.",
+ "You are overweight. Try to stick to better eating habits and exercises to reduce your BMI.", 
+ "You are obese. Reach out to a health proffesional to discuss more about how to reduce your BMI. "  ];
