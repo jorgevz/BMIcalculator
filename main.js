@@ -1,50 +1,60 @@
-// In this function I am performing the whole calculation
+//variables used declared before function.
+let feet,inches,constant,weight, realHeight, result, finalHeight, finalResult;
+
+// In this function I am performing the whole calculation.
 function bmiOperation() {
 
 
     //height (feet) input variable
-    let feet = document.getElementById('feet').value;
+     feet = document.getElementById('feet').value;
 
-    let inches = document.getElementById('inches').value;
+     inches = document.getElementById('inches').value;
 
-    let feetConversion = feet * 12/10;
-
-    let finalHeight = feetConversion.toFixed(0) + inches;
+     finalHeight = feet*12 + +inches;
 
     // weight input variable
-    let weight = document.getElementById('weight').value;
+     weight = document.getElementById('weight').value;
 
-    let constant = 703;
+     constant = 703;
 
-    let realHeight = Math.pow(finalHeight, 2);
+     realHeight = Math.pow(finalHeight, 2);
 
-    let result = constant * weight/realHeight;
+     result = (constant * weight/realHeight) ;
 
     // rounded with *10/10 to show first decimal of the final result.
-   let finalResult = Math.round(result * 10)/10
+     finalResult = Math.round(result*10)/10;
 
-   console.log(finalResult)
 
-    document.getElementById('result').innerHTML = finalResult
+
+     console.log(finalResult)
+
+     document.getElementById('result').innerHTML = finalResult
 
 
 const bmi = finalResult
 
-if ( bmi < 18.5) {
+if ( bmi <= 18.5) {
     document.getElementById('advice').innerHTML = ranges[0]
-} else if ( bmi < 24.9) {
+} else if ( bmi <= 24.9) {
     document.getElementById('advice').innerHTML = ranges[1]
-} else if ( bmi < 29.9) {
+} else if ( bmi <= 29.9) {
     document.getElementById('advice').innerHTML = ranges[2]
 } else if ( bmi >= 30) {
     document.getElementById('advice').innerHTML = ranges[3]
+} else if (bmi !== NaN){
+    document.getElementById('result').innerHTML = errorMessages[0];
+    document.getElementById('advice').innerHTML = errorMessages[1];
+} else if (bmi <= 0){
+    document.getElementById('result').innerHTML = errorMessages[0];
+    document.getElementById('advice').innerHTML = errorMessages[1];
 }
 
-};
-
+}
 //BMI advice statements
 
 const ranges = ["You are underweight. Reach out to a health proffesional to discuss more about your nutrition habits.", 
 "You are healthy, your BMI stands in a good position. Keep your good diet and exercise habits up.",
  "You are overweight. Try to stick to better eating habits and exercises to reduce your BMI.", 
  "You are obese. Reach out to a health proffesional to discuss more about how to reduce your BMI. " ]
+
+const errorMessages = ["Please enter your information correctly.", " Something was wrong with your inputs."]
