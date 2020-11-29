@@ -41,7 +41,10 @@ if ( bmi <= 18.5) {
     document.getElementById('advice').innerHTML = ranges[2]
 } else if ( bmi >= 30) {
     document.getElementById('advice').innerHTML = ranges[3]
-} else if (bmi !== NaN){
+}else if (bmi >= 60){
+document.getElementById('result').innerHTML = errorMessages[0];
+document.getElementById('advice').innerHTML = errorMessages[2];
+}  else if (bmi !== NaN){
     document.getElementById('result').innerHTML = errorMessages[0];
     document.getElementById('advice').innerHTML = errorMessages[1];
 } else if (bmi <= 0){
@@ -49,7 +52,7 @@ if ( bmi <= 18.5) {
     document.getElementById('advice').innerHTML = errorMessages[1];
 }
 
-}
+
 //BMI advice statements
 
 const ranges = ["You are underweight. Reach out to a health proffesional to discuss more about your nutrition habits.", 
@@ -57,4 +60,5 @@ const ranges = ["You are underweight. Reach out to a health proffesional to disc
  "You are overweight. Try to stick to better eating habits and exercises to reduce your BMI.", 
  "You are obese. Reach out to a health proffesional to discuss more about how to reduce your BMI. " ]
 
-const errorMessages = ["Please enter your information correctly.", " Something was wrong with your inputs."]
+const errorMessages = ["Please enter your information correctly.", 
+" Something was wrong with your inputs.", "Wow that BMI is too big, check your information."]
