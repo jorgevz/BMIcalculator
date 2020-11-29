@@ -7,20 +7,22 @@
     <link rel="stylesheet" type="text/css" href="main.css" ></link>
     <script src="main.js"></script>
 </head>
-<body id="main-body">
+<body class="main-body">
+    <form class="main-body">
   
     <h6 id="first-title">BMI Calculator</h6>
 
 <div id="heights">
-<input id="feet"  placeholder="Feet"></input>
+<input type="number" id="feet"  placeholder="Feet"></input>
 <span class="apos">'</span>
-<input id="inches"  placeholder="Inches"></input>
+<input type="number" id="inches"  placeholder="Inches"></input>
 <span class="apos">"</span>
 </div>
 
 <br/>
-<input id="weight"  placeholder="Weight(lbs)"></input>
+<input id="weight" type="number" placeholder="Weight(lbs)"></input>
 <br/>
+
 <button class="my-submit" type="button" onclick="bmiOperation()"> submit </button>
 
 
@@ -31,14 +33,18 @@
 <br/>
 <br/>
 <br/>
+
+
+
 <br/>
 <br/>
 <br/>
 <h3 id="first-paragraph">Identify your BMI and see where you stand, be healthy ! </h3>
 
-
-</body>
-
 <h2 id="result"> You have a BMI of  </h2>
 <p id="advice"></p>
+<input type="reset" value="Reset"/>
+</form>
+</body>
+
 </html>
