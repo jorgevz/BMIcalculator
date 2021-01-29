@@ -1,8 +1,9 @@
 //variables used declared before function.
 let feet,inches,constant,weight, realHeight, result, finalHeight, finalResult;
 
-// In this function I am performing the whole calculation.
-function bmiOperation() {
+// In this function I am performing the whole calculation
+
+const bmiOperation = () => {
 
 
     //height (feet) input variable
@@ -26,7 +27,7 @@ function bmiOperation() {
 
 
 
-     console.log(finalResult)
+    //  console.log(finalResult)
 
      document.getElementById('result').innerHTML = finalResult
 
@@ -49,7 +50,7 @@ if ( bmi <= 18.5 ) {
 //Values can't be zero or negative integers
 if (bmi <= 0) {
     document.getElementById('result').innerHTML = errorMessages[1];
-    document.getElementById('advice').innerHTML = '';
+    document.getElementById('advice').innerHTML = '' 
 }
 
 }
