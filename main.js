@@ -34,24 +34,24 @@ const bmiOperation = () => {
 
 const bmi = finalResult
 
-if ( bmi <= 18.5 ) {
-    document.getElementById('advice').innerHTML = ranges[0]
-} else if ( bmi <= 24.9) {
-    document.getElementById('advice').innerHTML = ranges[1]
-} else if ( bmi <= 29.9) {
-    document.getElementById('advice').innerHTML = ranges[2]
-} else if ( bmi <= 100) {
-    document.getElementById('advice').innerHTML = ranges[3];
-} else if (bmi !== Number){
-    document.getElementById('result').innerHTML = errorMessages[0];
-    document.getElementById('advice').innerHTML = '';
-}  
+    if ( bmi <= 18.5 ) {
+        document.getElementById('advice').innerHTML = ranges[0]
+        } else if ( bmi <= 24.9) {
+        document.getElementById('advice').innerHTML = ranges[1]
+        } else if ( bmi <= 29.9) {
+        document.getElementById('advice').innerHTML = ranges[2]
+        } else if ( bmi <= 100) {
+        document.getElementById('advice').innerHTML = ranges[3];
+        } else if (bmi !== Number);{
+        document.getElementById('result').innerHTML = errorMessages[0];
+        document.getElementById('advice').innerHTML = '';
+    }  
 
 //Values can't be zero or negative integers
-if (bmi <= 0) {
-    document.getElementById('result').innerHTML = errorMessages[1];
-    document.getElementById('advice').innerHTML = '' 
-}
+    if (bmi <= 0) {
+        document.getElementById('result').innerHTML = errorMessages[1];
+        document.getElementById('advice').innerHTML = '' 
+    }
 
 }
 //BMI advice statements
