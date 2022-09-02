@@ -4,7 +4,7 @@ flex-direction: column;
 width: auto;
 align-items: center;
 height: auto;   
-background-color: #484848;
+background-color: #ff1313;
 font-size: large;
 font-weight: bolder;
 }
@@ -12,7 +12,7 @@ font-weight: bolder;
 .apos{
 font-size: 25px;
 font-weight: bolder;
-color: white;
+color: rgb(89, 101, 86);
 }
 
 #form{
@@ -57,7 +57,7 @@ align-items: center;
 #first-title{
 font-size: xx-large;    
 font-weight: bolder;
-color: #FF5A5F;
+color: #0f0bf1;
 }
 
 #first-paragraph{
@@ -66,7 +66,7 @@ font-weight: bolder;
 }
 
 #second-body{
-background-color: gray;
+background-color: rgb(71, 22, 233);
 width: auto;
 }
 
@@ -78,11 +78,11 @@ width: auto;
 #result{
 font-size: 30px;    
 font-weight: bolder;
-color:#FF5A5F;
+color:#705aff;
 }
 
 #advice{
 font-weight: bolder;
-color:#FF5A5F;
+color:#5affa4;
 font-size: 20px;    
 }
